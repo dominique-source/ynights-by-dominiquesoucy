@@ -16,8 +16,8 @@ export const DISCIPLINES: Discipline[] = [
 
 export const DISCIPLINE_LABELS: Record<Discipline, string> = {
   squash: "Squash",
-  sprint40: "40 Yards",
-  sled: "Sled",
+  sprint40: "40 Verges",
+  sled: "Traîneau",
   baseball: "Baseball",
 };
 

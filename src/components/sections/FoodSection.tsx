@@ -8,9 +8,9 @@ export function FoodSection() {
         <div>
           <p className="eyebrow mb-4">On mange bien</p>
           <h2 className="font-display text-white text-[clamp(2.4rem,1.9rem+3.2vw,5.5rem)] leading-[0.88]">
-            Play hard.
+            Joue fort.
             <br />
-            <span className="text-accent-bright">Eat well.</span>
+            <span className="text-accent-bright">Mange bien.</span>
           </h2>
           <p className="mt-7 text-xl text-white">
             Pizza + sous-marins libanais

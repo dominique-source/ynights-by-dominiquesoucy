@@ -14,9 +14,9 @@ export function SocialLoopSection() {
           <div>
             <p className="eyebrow mb-4">Le cercle Y NIGHT</p>
             <h2 className="font-display text-white text-[clamp(2.4rem,1.9rem+3.2vw,5.5rem)] leading-[0.88]">
-              Get ranked.
+              Classe-toi.
               <br />
-              <span className="text-accent-bright">Get called out.</span>
+              <span className="text-accent-bright">Fais parler de toi.</span>
             </h2>
           </div>
 

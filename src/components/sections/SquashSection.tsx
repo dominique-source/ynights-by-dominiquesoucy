@@ -16,6 +16,7 @@ export function SquashSection() {
             imageSrc="/images/ynight/squash.jpg"
             imageAlt="Joueur de squash en pleine action dans un court vitré à Espace Y, foule en arrière-plan"
             videoSrc="/videos/squash-demo.mp4"
+            objectPositionClassName="object-[50%_8%] lg:object-center"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -54,8 +55,8 @@ export function SquashSection() {
           </ul>
 
           <p className="mt-10 font-display text-white text-lg sm:text-xl">
-            Fast hands. Quick feet.{" "}
-            <span className="text-accent-bright">Smart decisions.</span>
+            Mains rapides. Pieds agiles.{" "}
+            <span className="text-accent-bright">Tête froide.</span>
           </p>
         </div>
       </div>

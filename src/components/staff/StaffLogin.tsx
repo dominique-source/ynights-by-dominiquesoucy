@@ -16,7 +16,7 @@ export function StaffLogin() {
         className="w-full max-w-sm border border-line bg-surface p-8 pi-cut"
       >
         <Lock className="text-accent-bright" size={28} />
-        <h1 className="mt-4 font-display text-white text-3xl">Staff mode</h1>
+        <h1 className="mt-4 font-display text-white text-3xl">Mode équipe</h1>
         <p className="mt-2 text-sm text-muted">
           Accès réservé à l&rsquo;équipe Y NIGHT.
         </p>

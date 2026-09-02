@@ -13,7 +13,7 @@ export function SprintSection() {
         <div className="order-2 lg:order-1">
           <p className="eyebrow mb-4">40 verges</p>
           <h2 className="font-display text-white text-[clamp(3rem,2.4rem+4vw,7rem)] leading-[0.85]">
-            The 40
+            Le 40
           </h2>
           <p className="mt-5 text-lg text-muted sm:text-xl">
             40 verges. Deux essais.{" "}
@@ -28,7 +28,7 @@ export function SprintSection() {
               </span>
               <span className="mt-2 text-sm text-white">
                 {leader.athlete.firstName} {leader.athlete.lastInitial} &middot;{" "}
-                Personal best
+                Record personnel
               </span>
             </div>
           )}
@@ -41,7 +41,7 @@ export function SprintSection() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           <span className="absolute bottom-5 left-5 font-display text-white text-2xl">
-            No excuses. <span className="text-accent-bright">Just the clock.</span>
+            Aucune excuse. <span className="text-accent-bright">Juste le chrono.</span>
           </span>
         </div>
       </div>

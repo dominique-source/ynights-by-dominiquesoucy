@@ -26,7 +26,7 @@ export function LiveTicker() {
     <section className="border-y border-line bg-bg-2 py-8" aria-label="Classement provincial en direct">
       <div className="yn-container-wide mb-6 flex flex-wrap items-center justify-between gap-4">
         <h2 className="font-display text-white text-[clamp(1.8rem,1.4rem+2.5vw,3.5rem)] leading-none">
-          Québec is playing.
+          Québec joue.
         </h2>
         <span className="inline-flex items-center gap-2 border border-accent/50 px-3 py-1.5">
           <span className="h-2 w-2 rounded-full bg-live animate-pulse-live" aria-hidden />

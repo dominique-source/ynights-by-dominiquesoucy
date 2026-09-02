@@ -19,7 +19,7 @@ export function ParentsSection() {
             <br />
             30 minutes.
             <br />
-            <span className="text-accent-bright">Your turn.</span>
+            <span className="text-accent-bright">À vous de jouer.</span>
           </h2>
 
           <p className="mt-7 text-lg text-muted sm:text-xl">

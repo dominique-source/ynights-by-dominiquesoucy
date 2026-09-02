@@ -57,7 +57,7 @@ export function EventForm() {
     <div>
       <h3 className="font-display text-white text-2xl">Gérer l&rsquo;événement</h3>
       <p className="mt-2 max-w-lg text-sm text-muted-2">
-        Ces réglages sont sauvegardés localement pour prévisualisation staff.
+        Ces réglages sont sauvegardés localement pour prévisualisation équipe.
         Une fois Supabase branché, ils deviendront la source pour le site
         public en temps réel.
       </p>

@@ -13,13 +13,13 @@ export function SledSection() {
       <div className="yn-container-wide">
         <div className="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
           <div>
-            <p className="eyebrow mb-3">Sled challenge</p>
+            <p className="eyebrow mb-3">Défi traîneau</p>
             <h2 className="font-display text-white text-[clamp(3rem,2.4rem+4vw,7rem)] leading-[0.85]">
-              Push.
+              Pousse.
             </h2>
           </div>
           <p className="text-lg text-muted sm:max-w-xs sm:text-right sm:text-xl">
-            Push. Drive. <span className="text-text">Finish.</span>
+            Pousse. Fonce. <span className="text-text">Termine.</span>
           </p>
         </div>
 
