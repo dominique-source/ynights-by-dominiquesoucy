@@ -1,0 +1,301 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Y NIGHT — Design tokens
+   Premium sports-editorial system. Deep black, off-white type, one
+   deliberate neon accent. See /docs for brand reference assets.
+   ========================================================================== */
+
+:root {
+  /* Background */
+  --yn-bg: #050505;
+  --yn-bg-2: #0a0a0a;
+  --yn-surface: #121212;
+  --yn-surface-2: #1a1a1a;
+
+  /* Text */
+  --yn-white: #ffffff;
+  --yn-text: #f4f1ea;
+  --yn-muted: #b4b4b4;
+  --yn-muted-2: #8a8a8a;
+
+  /* Accent — deep pink / magenta / red-neon family. Spend deliberately. */
+  --yn-accent: #f2385a;
+  --yn-accent-bright: #ff315f;
+  --yn-accent-deep: #d92f55;
+
+  /* Status */
+  --yn-live: #ff315f;
+  --yn-ok: #3ddc84;
+
+  /* Lines */
+  --yn-line: rgba(244, 241, 234, 0.12);
+  --yn-line-strong: rgba(244, 241, 234, 0.22);
+
+  /* Spacing (4-based) */
+  --yn-s1: 4px;
+  --yn-s2: 8px;
+  --yn-s3: 12px;
+  --yn-s4: 16px;
+  --yn-s6: 24px;
+  --yn-s8: 32px;
+  --yn-s12: 48px;
+  --yn-s16: 64px;
+  --yn-s24: 96px;
+  --yn-s32: 128px;
+
+  /* Fluid type scale */
+  --yn-fs-display: clamp(3.2rem, 3rem + 7vw, 9.5rem);
+  --yn-fs-hero-sub: clamp(1.1rem, 1rem + 1vw, 1.75rem);
+  --yn-fs-score: clamp(2.5rem, 2rem + 4vw, 5.5rem);
+  --yn-fs-title: clamp(2.2rem, 1.9rem + 2.4vw, 4.25rem);
+  --yn-fs-section: clamp(1.6rem, 1.4rem + 1.4vw, 2.75rem);
+  --yn-fs-card: clamp(1.15rem, 1.05rem + 0.5vw, 1.5rem);
+  --yn-fs-body: clamp(0.98rem, 0.94rem + 0.2vw, 1.125rem);
+  --yn-fs-label: 0.8125rem;
+  --yn-fs-meta: 0.72rem;
+
+  /* Motion */
+  --yn-dur-fast: 150ms;
+  --yn-dur-base: 320ms;
+  --yn-dur-slow: 650ms;
+  --yn-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --yn-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Geometry */
+  --yn-cut: 18px;
+
+  /* Content widths */
+  --yn-w-content: 1200px;
+  --yn-w-wide: 1440px;
+  --yn-w-narrow: 460px;
+}
+
+@theme inline {
+  --color-bg: var(--yn-bg);
+  --color-bg-2: var(--yn-bg-2);
+  --color-surface: var(--yn-surface);
+  --color-surface-2: var(--yn-surface-2);
+  --color-white: var(--yn-white);
+  --color-text: var(--yn-text);
+  --color-muted: var(--yn-muted);
+  --color-muted-2: var(--yn-muted-2);
+  --color-accent: var(--yn-accent);
+  --color-accent-bright: var(--yn-accent-bright);
+  --color-accent-deep: var(--yn-accent-deep);
+  --color-live: var(--yn-live);
+  --color-line: var(--yn-line);
+  --font-display: var(--font-anton), "Arial Narrow", sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--yn-bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--yn-bg);
+  color: var(--yn-text);
+  font-family: var(--font-body);
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--yn-accent);
+  color: var(--yn-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--yn-accent-bright);
+  outline-offset: 3px;
+}
+
+/* Tabular numerals for anything score/timer-related */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Display / editorial type */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+/* Cut corner — signature broadcast geometry */
+.pi-cut {
+  clip-path: polygon(
+    var(--yn-cut) 0%,
+    100% 0%,
+    100% calc(100% - var(--yn-cut)),
+    calc(100% - var(--yn-cut)) 100%,
+    0% 100%,
+    0% var(--yn-cut)
+  );
+}
+
+.pi-cut-sm {
+  --yn-cut: 10px;
+}
+
+/* Thin dividers */
+.divider-x {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--yn-accent) 15%,
+    var(--yn-accent) 85%,
+    transparent
+  );
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background: var(--yn-line);
+}
+
+/* Grain overlay */
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 180px 180px;
+}
+
+/* Container */
+.yn-container {
+  width: 100%;
+  max-width: var(--yn-w-content);
+  margin-inline: auto;
+  padding-inline: var(--yn-s4);
+}
+
+@media (min-width: 640px) {
+  .yn-container {
+    padding-inline: var(--yn-s8);
+  }
+}
+
+.yn-container-wide {
+  width: 100%;
+  max-width: var(--yn-w-wide);
+  margin-inline: auto;
+  padding-inline: var(--yn-s4);
+}
+
+@media (min-width: 640px) {
+  .yn-container-wide {
+    padding-inline: var(--yn-s8);
+  }
+}
+
+/* Eyebrow label */
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--yn-fs-label);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--yn-accent-bright);
+}
+
+/* Outlined text treatment */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--yn-text);
+}
+
+@media (min-width: 1024px) {
+  .text-outline {
+    -webkit-text-stroke: 2px var(--yn-text);
+  }
+}
+
+/* Marquee / ticker */
+@keyframes yn-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: yn-marquee 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* Live pulse dot */
+@keyframes yn-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.85);
+  }
+}
+
+.animate-pulse-live {
+  animation: yn-pulse 1.6s ease-in-out infinite;
+}
+
+/* Scrollbar (webkit) — keep it minimal/dark */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--yn-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--yn-surface-2);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yn-accent-deep);
+}
