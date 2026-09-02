@@ -10,7 +10,7 @@ export function Footer() {
           href="/staff"
           className="text-xs uppercase tracking-widest text-muted-2/60 hover:text-muted-2"
         >
-          Accès staff
+          Accès équipe
         </a>
       </div>
     </footer>

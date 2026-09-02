@@ -84,7 +84,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-3 max-w-xl text-[clamp(1.05rem,1rem+1vw,1.5rem)] font-semibold uppercase tracking-wide text-white">
-            Sport. Food. Music. <span className="text-accent-bright">People.</span>
+            Sport. Bouffe. Musique. <span className="text-accent-bright">Monde.</span>
           </p>
 
           <p className="mt-5 max-w-lg text-pretty text-lg text-text/90 sm:text-xl">
@@ -113,7 +113,7 @@ export function Hero() {
           </p>
 
           <p className="mt-2 text-sm text-muted">
-            By {partners.host} &middot; Avec {partners.dj} &middot; En
+            Par {partners.host} &middot; Avec {partners.dj} &middot; En
             partenariat avec {partners.food}
           </p>
         </div>

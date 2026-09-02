@@ -41,9 +41,9 @@ export function YBoard() {
   return (
     <section id="y-board" className="relative bg-bg-2 py-24 sm:py-32">
       <div className="yn-container">
-        <p className="eyebrow mb-4">The Y Board</p>
+        <p className="eyebrow mb-4">Le Y Board</p>
         <h2 className="font-display text-white text-[clamp(2.4rem,1.9rem+3.2vw,5.5rem)] leading-[0.9]">
-          Where do <span className="text-outline">you</span> rank?
+          T&rsquo;es classé <span className="text-outline">où</span>?
         </h2>
         <p className="mt-4 max-w-md text-lg text-muted">
           Classement provincial Y NIGHT

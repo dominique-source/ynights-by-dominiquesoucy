@@ -18,7 +18,7 @@ export function MusicSection() {
       <div className="yn-container-wide relative">
         <p className="eyebrow mb-4">La trame sonore</p>
         <h2 className="font-display text-white text-[clamp(2.4rem,1.9rem+3.2vw,5.5rem)] leading-[0.88]">
-          The sound of
+          Le son de
           <br />
           <span className="text-accent-bright">Y Night.</span>
         </h2>

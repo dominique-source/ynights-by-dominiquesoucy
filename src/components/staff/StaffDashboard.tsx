@@ -10,10 +10,10 @@ import { EventForm } from "./EventForm";
 import { StaffLeaderboard } from "./StaffLeaderboard";
 
 const TABS = [
-  { id: "athlete", label: "Add Athlete" },
-  { id: "result", label: "Add Result" },
-  { id: "event", label: "Manage Event" },
-  { id: "rankings", label: "View Rankings" },
+  { id: "athlete", label: "Ajouter un athlète" },
+  { id: "result", label: "Ajouter un résultat" },
+  { id: "event", label: "Gérer l'événement" },
+  { id: "rankings", label: "Voir le classement" },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
@@ -27,7 +27,7 @@ export function StaffDashboard() {
         <div className="yn-container-wide flex h-16 items-center justify-between">
           <p className="font-display text-white text-xl">
             Y<span className="text-accent-bright">NIGHT</span>{" "}
-            <span className="text-muted-2">/ Staff</span>
+            <span className="text-muted-2">/ Équipe</span>
           </p>
           <form action={staffLogout}>
             <button

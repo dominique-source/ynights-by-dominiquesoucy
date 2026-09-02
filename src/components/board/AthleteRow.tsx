@@ -46,7 +46,7 @@ export function AthleteRow({ entry, onSelect }: AthleteRowProps) {
           </span>
           {entry.isPersonalBest && (
             <span className="eyebrow rounded-sm bg-accent/15 px-1.5 py-0.5 text-[10px] text-accent-bright">
-              New PB
+              Nouveau RP
             </span>
           )}
         </span>

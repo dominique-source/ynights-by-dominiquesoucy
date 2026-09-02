@@ -4,7 +4,7 @@ import { StaffLogin } from "@/components/staff/StaffLogin";
 import { StaffDashboard } from "@/components/staff/StaffDashboard";
 
 export const metadata: Metadata = {
-  title: "Staff",
+  title: "Équipe",
   robots: { index: false, follow: false },
 };
 

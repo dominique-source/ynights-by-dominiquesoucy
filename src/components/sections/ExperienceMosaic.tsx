@@ -7,12 +7,14 @@ function Tile({
   tag,
   image,
   className = "",
+  objectPositionClassName = "object-center",
 }: {
   href: string;
   label: string;
   tag: string;
   image: string;
   className?: string;
+  objectPositionClassName?: string;
 }) {
   return (
     <a
@@ -24,7 +26,7 @@ function Tile({
         alt=""
         fill
         sizes="(min-width: 640px) 50vw, 100vw"
-        className="object-cover transition-transform duration-[var(--yn-dur-slow)] ease-out group-hover:scale-[1.04]"
+        className={`object-cover ${objectPositionClassName} transition-transform duration-[var(--yn-dur-slow)] ease-out group-hover:scale-[1.04]`}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 sm:p-6">
@@ -55,9 +57,10 @@ export function ExperienceMosaic() {
             <Tile
               href="#squash"
               label="Squash"
-              tag="Fast hands. Quick feet."
+              tag="Mains rapides. Pieds agiles."
               image="/images/ynight/squash.jpg"
               className="sm:aspect-auto sm:flex-[1.1]"
+              objectPositionClassName="object-[50%_10%] sm:object-center"
             />
             <div className="flex flex-col gap-4 sm:flex-1">
               <Tile
@@ -68,7 +71,7 @@ export function ExperienceMosaic() {
               />
               <Tile
                 href="#sprint"
-                label="40 Yards"
+                label="40 Verges"
                 tag="Un chrono. Aucune excuse."
                 image="/images/ynight/sprint.jpg"
               />
@@ -77,8 +80,8 @@ export function ExperienceMosaic() {
 
           <Tile
             href="#sled"
-            label="Sled"
-            tag="Push. Drive. Finish."
+            label="Traîneau"
+            tag="Pousse. Fonce. Termine."
             image="/images/ynight/sled.jpg"
             className="sm:aspect-[21/6]"
           />

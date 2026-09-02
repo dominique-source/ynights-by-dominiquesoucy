@@ -40,7 +40,7 @@ export function ShareCard({ athlete, entry }: ShareCardProps) {
       >
         <div className="flex items-center justify-between">
           <span className="eyebrow">
-            {isNew ? `New #${entry.rank}` : `Rank #${entry.rank}`}
+            {isNew ? `Nouveau #${entry.rank}` : `Rang #${entry.rank}`}
           </span>
           <span className="font-display text-white text-sm">YN</span>
         </div>
@@ -66,7 +66,7 @@ export function ShareCard({ athlete, entry }: ShareCardProps) {
             Y Night
           </p>
           <p className="text-xs text-muted-2">Espace Y</p>
-          <p className="mt-3 eyebrow text-white/70">Who&rsquo;s next?</p>
+          <p className="mt-3 eyebrow text-white/70">À qui le tour?</p>
         </div>
       </div>
 

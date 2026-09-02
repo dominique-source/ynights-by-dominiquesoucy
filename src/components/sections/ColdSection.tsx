@@ -15,9 +15,9 @@ export function ColdSection() {
         <div>
           <p className="eyebrow mb-4">Récupération</p>
           <h2 className="font-display text-white text-[clamp(2.6rem,2rem+4vw,6rem)] leading-[0.85]">
-            Cold.
+            Froid.
             <br />
-            <span className="text-accent-bright">Very cold.</span>
+            <span className="text-accent-bright">Très froid.</span>
           </h2>
           <p className="mt-6 max-w-md text-lg text-muted sm:text-xl">
             Parce qu&rsquo;une Y NIGHT sans bain glacé serait beaucoup trop

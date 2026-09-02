@@ -12,6 +12,7 @@ export function BaseballSection() {
         <SectionMedia
           imageSrc="/images/ynight/baseball.jpg"
           imageAlt="Joueur qui frappe dans une cage de baseball intérieure, écran affichant la distance de la frappe"
+          objectPositionClassName="object-[60%_30%] sm:object-center"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/10" />
@@ -19,9 +20,9 @@ export function BaseballSection() {
           <div className="yn-container-wide !px-0">
             <p className="eyebrow mb-3">Cage de frappe baseball</p>
             <h2 className="font-display text-white text-[clamp(2.2rem,1.8rem+3vw,5rem)] leading-[0.9]">
-              How far can
+              Jusqu&rsquo;où peux-tu
               <br />
-              you hit it?
+              la frapper?
             </h2>
           </div>
         </div>
@@ -35,7 +36,7 @@ export function BaseballSection() {
 
         {leader && (
           <div className="border border-line bg-surface p-6 pi-cut-sm">
-            <p className="eyebrow text-muted-2">Longest drive</p>
+            <p className="eyebrow text-muted-2">Plus longue frappe</p>
             <p className="mt-2 font-display text-accent-bright text-5xl tnum leading-none">
               {leader.performanceLabel}
             </p>

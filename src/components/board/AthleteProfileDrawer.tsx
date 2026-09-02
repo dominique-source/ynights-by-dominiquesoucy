@@ -90,7 +90,7 @@ export function AthleteProfileDrawer({
 
               {profile.overallRank && (
                 <div className="mt-8">
-                  <p className="eyebrow text-muted-2">Overall Y Rank</p>
+                  <p className="eyebrow text-muted-2">Classement Y global</p>
                   <p className="font-display text-accent-bright text-6xl tnum sm:text-7xl">
                     #{profile.overallRank}
                   </p>
@@ -134,7 +134,7 @@ export function AthleteProfileDrawer({
                 if (!target) return null;
                 return (
                   <div className="mt-8 border border-accent/40 bg-accent/10 p-5 pi-cut-sm">
-                    <p className="eyebrow text-accent-bright">Next target</p>
+                    <p className="eyebrow text-accent-bright">Prochain objectif</p>
                     <p className="mt-2 font-display text-white text-xl">
                       {target.disciplineLabel}
                     </p>
@@ -155,7 +155,7 @@ export function AthleteProfileDrawer({
                   className="pi-cut-sm inline-flex h-13 flex-1 items-center justify-center gap-2 bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-accent-bright"
                 >
                   <Swords size={16} />
-                  Challenge {profile.athlete.firstName}
+                  Défier {profile.athlete.firstName}
                 </a>
                 <button
                   type="button"
@@ -163,7 +163,7 @@ export function AthleteProfileDrawer({
                   className="inline-flex h-13 flex-1 items-center justify-center gap-2 border border-white/30 px-6 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:border-white"
                 >
                   <Share2 size={16} />
-                  Share profile
+                  Partager le profil
                 </button>
               </div>
 

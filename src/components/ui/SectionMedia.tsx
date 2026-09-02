@@ -9,6 +9,8 @@ interface SectionMediaProps {
   imageAlt: string;
   videoSrc?: string;
   className?: string;
+  /** Tailwind object-position utility, e.g. "object-[50%_15%]". Defaults to object-cover's center. */
+  objectPositionClassName?: string;
   sizes?: string;
   priority?: boolean;
 }
@@ -23,6 +25,7 @@ export function SectionMedia({
   imageAlt,
   videoSrc,
   className,
+  objectPositionClassName,
   sizes = "(min-width: 1024px) 50vw, 100vw",
   priority = false,
 }: SectionMediaProps) {
@@ -31,7 +34,7 @@ export function SectionMedia({
   if (videoSrc && !videoFailed) {
     return (
       <video
-        className={cn("h-full w-full object-cover", className)}
+        className={cn("h-full w-full object-cover", objectPositionClassName, className)}
         autoPlay
         muted
         loop
@@ -51,7 +54,7 @@ export function SectionMedia({
       fill
       sizes={sizes}
       priority={priority}
-      className={cn("object-cover", className)}
+      className={cn("object-cover", objectPositionClassName, className)}
     />
   );
 }

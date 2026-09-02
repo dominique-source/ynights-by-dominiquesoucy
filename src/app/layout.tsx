@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Y NIGHT",
   },
   description:
-    "Découvre Y NIGHT à Espace Y : squash, cages de baseball, 40 verges, sled challenge, DJ, pizza, sous-marins libanais et classement provincial pour jeunes athlètes.",
+    "Découvre Y NIGHT à Espace Y : squash, cages de baseball, 40 verges, défi traîneau, DJ, pizza, sous-marins libanais et classement provincial pour jeunes athlètes.",
   keywords: [
     "squash Québec",
     "activité ado Québec",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Y NIGHT | Squash, défis, DJ et bouffe à Espace Y",
     description:
-      "Sport. Food. Music. People. Une soirée sportive sociale de 2 heures à Espace Y — squash, cages de baseball, 40 verges, sled challenge, DJ Ed Sound et classement provincial.",
+      "Sport. Bouffe. Musique. Monde. Une soirée sportive sociale de 2 heures à Espace Y — squash, cages de baseball, 40 verges, défi traîneau, DJ Ed Sound et classement provincial.",
     url: siteUrl,
     siteName: "Y NIGHT",
     locale: "fr_CA",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Y NIGHT | Squash, défis, DJ et bouffe à Espace Y",
     description:
-      "Sport. Food. Music. People. Découvre Y NIGHT à Espace Y et le classement provincial.",
+      "Sport. Bouffe. Musique. Monde. Découvre Y NIGHT à Espace Y et le classement provincial.",
     images: ["/images/ynight/hero.jpg"],
   },
   icons: {

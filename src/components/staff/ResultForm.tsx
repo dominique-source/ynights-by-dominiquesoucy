@@ -103,7 +103,7 @@ export function ResultForm() {
 
         {discipline === "squash" && (
           <div className="grid grid-cols-3 gap-4">
-            <Field label="Rating" name="rating" type="number" defaultValue={1400} />
+            <Field label="Cote" name="rating" type="number" defaultValue={1400} />
             <Field label="Victoires" name="wins" type="number" defaultValue={0} />
             <Field label="Défaites" name="losses" type="number" defaultValue={0} />
           </div>
