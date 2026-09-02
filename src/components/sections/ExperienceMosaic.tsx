@@ -68,6 +68,7 @@ export function ExperienceMosaic() {
                 label="Baseball"
                 tag="Cage de frappe"
                 image="/images/ynight/baseball.jpg"
+                objectPositionClassName="object-[12%_50%] sm:object-center"
               />
               <Tile
                 href="#sprint"

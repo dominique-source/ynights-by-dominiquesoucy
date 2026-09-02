@@ -72,10 +72,10 @@ export function EventForm() {
         <Field label="Prix (CAD)" name="priceCad" type="number" defaultValue={values.priceCad} />
         <Field label="Durée (heures)" name="durationHours" type="number" defaultValue={values.durationHours} />
         <div />
-        <Field label="Sled — distance (m)" name="sledDistanceM" type="number" defaultValue={values.sledDistanceM} />
-        <Field label="Sled — charge (lb)" name="sledLoadLb" type="number" defaultValue={values.sledLoadLb} />
+        <Field label="Traîneau — distance (m)" name="sledDistanceM" type="number" defaultValue={values.sledDistanceM} />
+        <Field label="Traîneau — charge (lb)" name="sledLoadLb" type="number" defaultValue={values.sledLoadLb} />
         <Field
-          label="Sled — temps référence (s)"
+          label="Traîneau — temps référence (s)"
           name="sledReferenceTimeS"
           type="number"
           step="0.1"

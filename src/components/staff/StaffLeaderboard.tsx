@@ -20,7 +20,7 @@ export function StaffLeaderboard() {
 
   return (
     <div>
-      <h3 className="font-display text-white text-2xl">Classement (aperçu staff)</h3>
+      <h3 className="font-display text-white text-2xl">Classement (aperçu équipe)</h3>
       <div className="mt-5 flex gap-2 overflow-x-auto pb-1">
         {DISCIPLINES.map((d) => (
           <button

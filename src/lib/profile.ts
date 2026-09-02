@@ -1,7 +1,12 @@
 import { athletes, getAthlete } from "@/data/athletes";
 import { results } from "@/data/results";
 import { computeRankings, overallRankForAthlete } from "@/lib/rankings";
-import { DISCIPLINES, type Discipline, type RankingEntry } from "@/lib/types";
+import {
+  DISCIPLINE_LABELS,
+  DISCIPLINES,
+  type Discipline,
+  type RankingEntry,
+} from "@/lib/types";
 
 export interface AthleteProfile {
   athlete: NonNullable<ReturnType<typeof getAthlete>>;
@@ -52,7 +57,7 @@ export function nextTarget(profile: AthleteProfile): NextTarget | undefined {
   const target = entry.performanceValue % 1 === 0 ? floor - 1 : floor;
 
   return {
-    disciplineLabel: entry.discipline === "sprint40" ? "40 Yards" : "Sled",
+    disciplineLabel: DISCIPLINE_LABELS[entry.discipline],
     currentLabel: entry.performanceValue.toFixed(2),
     targetLabel: `SOUS ${target}.00`,
   };
